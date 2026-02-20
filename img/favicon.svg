@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="dropGrad" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect width="32" height="32" rx="7"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#012a4a"/>
+
+  <!-- Water drop -->
+  <path d="M16 5 C15.5 5 9 14.5 9 19.5 A7 7 0 0 0 23 19.5 C23 14.5 16.5 5 16 5 Z"
+        fill="url(#dropGrad)"/>
+
+  <!-- Shine highlight -->
+  <ellipse cx="13.5" cy="17" rx="1.5" ry="2.8"
+           fill="white" fill-opacity="0.25"
+           transform="rotate(-18 13.5 17)"/>
+</svg>

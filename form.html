@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application Form — HydroVanta | Fluid Control Solutions</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Application Form — HydroVanta">
+    <meta property="og:description" content="Join HydroVanta — leaders in electric pumps, solenoid valves and fluid control since 1980.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="landing.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.svg" sizes="32x32">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <svg class="preloader-drop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <defs>
+                    <linearGradient id="pg" x1="30%" y1="0%" x2="70%" y2="100%">
+                        <stop offset="0%" stop-color="#00b4d8"/>
+                        <stop offset="100%" stop-color="#0077b6"/>
+                    </linearGradient>
+                </defs>
+                <path d="M32 6 C31 6 16 28 16 38 A16 16 0 0 0 48 38 C48 28 33 6 32 6Z" fill="url(#pg)"/>
+                <ellipse cx="26" cy="34" rx="3.5" ry="6" fill="white" fill-opacity="0.22" transform="rotate(-18 26 34)"/>
+            </svg>
+            <div class="preloader-brand">Hydro<span>Vanta</span></div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container-lg">
+            <a class="navbar-brand navbar-brand-text" href="./">Hydro<span>Vanta</span></a>
+            <a class="btn-main" href="form.html">Apply Here</a>
+        </div>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="form-card">
+
+                        <div class="text-center mb-5">
+                            <div class="section-label">Careers at HydroVanta</div>
+                            <h2>Application Form</h2>
+                            <p class="form-subtitle">Complete the form below and our team will review your application and be in touch.</p>
+                        </div>
+
+                        <div id="statusMessage" class="mb-4"></div>
+
+                        <form id="applicationForm" novalidate>
+                            <div class="row g-4">
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">First Name</label>
+                                        <input class="form-control" id="first_name" type="text" placeholder="e.g. John" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Last Name</label>
+                                        <input class="form-control" id="last_name" type="text" placeholder="e.g. Smith" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Email Address</label>
+                                        <input class="form-control" id="email" type="email" placeholder="e.g. john@example.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Phone Number</label>
+                                        <input class="form-control" id="phone_no" type="tel" placeholder="e.g. +1 (555) 000-0000" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Date of Birth</label>
+                                        <input class="form-control" id="dob" type="date" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Address</label>
+                                        <input class="form-control" id="address" type="text" placeholder="Street address" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">City</label>
+                                        <input class="form-control" id="city" type="text" placeholder="City" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">State</label>
+                                        <input class="form-control" id="state" type="text" placeholder="State" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">Zip Code</label>
+                                        <input class="form-control" id="zip_code" type="text" placeholder="00000" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Area of Expertise</label>
+                                        <input class="form-control" id="expertise" type="text" placeholder="e.g. Mechanical Engineering, Sales" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Have you been verified by Commercial Identity Provider 'ID.ME'?</label>
+                                        <select class="form-control" id="idme_verified" required>
+                                            <option value="">Select an option</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Years of Experience</label>
+                                        <select class="form-control" id="experience" required>
+                                            <option value="">Select range</option>
+                                            <option value="0-2">0 – 2 years</option>
+                                            <option value="3-5">3 – 5 years</option>
+                                            <option value="6-10">6 – 10 years</option>
+                                            <option value="10+">10+ years</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Why do you want to join HydroVanta? <span class="text-muted fw-normal">(optional)</span></label>
+                                        <textarea class="form-control" id="motivation" rows="4" placeholder="Tell us a bit about yourself and why you're interested in this role..."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-2">
+                                    <button type="submit" class="btn-main" style="padding: 14px 48px; font-size: 1rem;">
+                                        Submit Application
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-lg">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand mb-2">Hydro<span>Vanta</span></div>
+                    <p>Electric pumps, solenoid valves, vibration pumps, pressure switches and flow switches — since 1980.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Address</h6>
+                    <hr>
+                    <p>HydroVanta S.p.A.<br>20 South Wacker Drive<br>Chicago, Illinois 60606, USA</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Contact</h6>
+                    <hr>
+                    <p>
+                        Tel: <a href="tel:+13048162756">+1 (304) 816 2756</a><br>
+                        Email: <a href="mailto:info@hydrovanta.com">info@hydrovanta.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Follow Us</h6>
+                    <hr>
+                    <p>
+                        <a href="#">LinkedIn</a><br>
+                        <a href="#">YouTube</a>
+                    </p>
+                    <h6 class="mt-3">Legal</h6>
+                    <hr>
+                    <p>
+                        <a href="#">Privacy Policy</a> |
+                        <a href="#">Cookie Policy</a><br>
+                        <a href="#">Terms &amp; Conditions</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-copy text-center">
+                &copy; 2024 HydroVanta S.p.A. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('preloader').classList.add('hidden');
+        });
+    </script>
+
+    <script>
+        document.getElementById("applicationForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const fields = {
+                "First Name": document.getElementById("first_name").value.trim(),
+                "Last Name": document.getElementById("last_name").value.trim(),
+                "Email": document.getElementById("email").value.trim(),
+                "Phone": document.getElementById("phone_no").value.trim(),
+                "Date of Birth": document.getElementById("dob").value.trim(),
+                "Address": document.getElementById("address").value.trim(),
+                "City": document.getElementById("city").value.trim(),
+                "State": document.getElementById("state").value.trim(),
+                "Zip Code": document.getElementById("zip_code").value.trim(),
+                "Expertise": document.getElementById("expertise").value.trim(),
+                "Experience": document.getElementById("experience").value.trim(),
+                "ID.ME Verification": document.getElementById("idme_verified").value.trim(),
+            };
+
+            const statusEl = document.getElementById("statusMessage");
+
+            for (const [label, value] of Object.entries(fields)) {
+                if (!value) {
+                    statusEl.innerHTML = `<div class="alert alert-danger">Please enter your ${label}.</div>`;
+                    return;
+                }
+            }
+
+            // Form is valid — show success state
+            statusEl.innerHTML = `<div class="alert alert-success">
+                <strong>Application submitted successfully!</strong><br>
+                Thank you for your interest in HydroVanta. Our team will review your application and get back to you shortly.
+            </div>`;
+
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
